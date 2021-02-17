@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,16 +20,60 @@
             background-color: deeppink;
         }
 
-        p{
-            height: 75%;
-            width: 75%;
-            background-color: #FBDD1C;
+        body {
+            display: inline;
+        }
+
+        div {
+            display: inline;
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            margin: 20px;
         }
     </style>
 </head>
+
 <body>
-    <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis perspiciatis quidem ratione? Distinctio eos ex expedita iusto necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto magnam nulla sed tempora.</p>
-    </div>
+    <main style="display: flex; flex-direction: row;">
+        <div style="overflow: visible;">
+            <h3>overflow: visible</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet corporis cupiditate
+            dignissimos error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis
+            provident quam sequi voluptatem
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut corporis facere harum inventore iure,
+            quisquam recusandae reprehenderit veritatis voluptatum. Ducimus exercitationem illo nam sapiente suscipit,
+            tenetur ullam ut voluptas!
+        </div>
+
+        <div style="overflow: hidden;">
+            <h3>Overflow Hidden</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet corporis cupiditate
+            dignissimos error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis
+            provident quam sequi voluptatem
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut corporis facere harum inventore iure,
+            quisquam recusandae reprehenderit veritatis voluptatum. Ducimus exercitationem illo nam sapiente suscipit,
+            tenetur ullam ut voluptas!
+        </div>
+
+        <div style="overflow: scroll;">
+            <h3>Overflow scroll</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet corporis cupiditate dignissimos error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis provident quam sequi voluptatem
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut corporis facere harum inventore iure, quisquam recusandae reprehenderit veritatis voluptatum. Ducimus exercitationem illo nam sapiente suscipit, tenetur ullam ut voluptas!
+        </div> 
+
+        <div style="overflow: auto;">
+            <h3>Overflow auto</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet corporis cupiditate dignissimos error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis provident quam sequi voluptatem
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut corporis facere harum inventore iure, quisquam recusandae reprehenderit veritatis voluptatum. Ducimus exercitationem illo nam sapiente suscipit, tenetur ullam ut voluptas!
+        </div> 
+
+        <div style="overflow: auto;">
+            <h3>Overflow auto</h3>
+            Lorem ipsum dolor sit amet, conses error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis provident quam sequi voluptatem
+        </div> 
+    </main>
+
 </body>
+
 </html>

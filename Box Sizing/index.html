@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            border: 5px solid cadetblue;
+            background-color: chartreuse;
+        }
+
+        .content-box {
+            box-sizing: content-box;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box"></div>
+    <p>Elemen menerapkan <code>box-sizing: content-box;</code> Ukuran box secara keseluruhan akan menjadi 350px lebar, 350px tinggi; 350 = 300 + 20(border kiri) + 20(border kanan) + 5(padding kiri) + 5(padding kanan)</p>
+    <br>
+    <div class="border-box"></div>
+    <p>Elemen menerapkan <code>box-sizing: border-box;</code> Ukuran box akan tetap 200px lebar, 200px tinggi meskipun menerapkan padding dan border</p>
+</body>
+</html>

@@ -37,3 +37,14 @@ footer {
     padding: 20px;
     background-color: #00a2c6;
 }
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px;
+}

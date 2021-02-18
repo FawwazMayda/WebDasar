@@ -87,3 +87,7 @@ nav a {
     font-size: 20px;
     text-decoration: none;
 }
+
+table {
+    text-align: left;
+}

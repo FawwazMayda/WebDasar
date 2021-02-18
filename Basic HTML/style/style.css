@@ -1,5 +1,11 @@
 body {
     font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    padding: 40px;
 }
 
 h2 {
@@ -47,4 +53,37 @@ footer {
 
 .profile img {
     width: 200px;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    background-color: #008ceb;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+nav {
+    padding: 5px;
+    background-color: #00a2c6;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
 }

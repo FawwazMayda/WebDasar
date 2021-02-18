@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
     margin: 0px;
@@ -6,6 +10,7 @@ body {
 
 main {
     padding: 40px;
+    overflow: auto;
 }
 
 h2 {
@@ -20,6 +25,11 @@ footer {
     padding: 20px;
     color: white;
     background-color: #00a2c6;
+}
+
+nav {
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -90,4 +100,26 @@ nav a {
 
 table {
     text-align: left;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 10px;
+}
+
+header {
+    display: inline;
+}
+
+@media screen and (max-width:720px) {
+    #content, aside {
+        padding: 0;
+        width: 100%;
+    }
 }

@@ -62,7 +62,16 @@ function calculate() {
     } else {
         res = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber)
     }
+    let newData: CalculationHistory = {
+        firstNumber: calculator.firstNumber,
+        operator: calculator.operator,
+        secondNumber: calculator.displayNumber,
+        result: String(res)
+    }
+
     calculator.displayNumber = String(res)
+    putHistoryData(newData)
+    renderHistory()
 }
 
 const allBtn = document.querySelectorAll(".button")

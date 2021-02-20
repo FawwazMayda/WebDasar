@@ -11,6 +11,11 @@ header {
     display: inline;
 }
 
+main {
+    overflow: auto;
+    padding: 20px;
+}
+
 .jumbotron {
     text-align: center;
     background-color: #f4f9f9;
@@ -35,7 +40,8 @@ nav li {
 nav a {
     text-decoration: none;
     color: #af0069;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .flex-row {
@@ -56,6 +62,10 @@ nav a {
     flex-basis: 50%;
 }
 
+.flex-triple-basis {
+    flex-basis: 75%;
+}
+
 .card {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -68,16 +78,33 @@ nav a {
     color: white;
 }
 */
+
+article {
+    font-size: 16px;
+    color: black;
+}
+
+article:hover {
+    color: white;
+    background-color: #6adfc2;
+}
+
 section {
     border: 1px solid black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 0;
     margin: 20px;
 }
 
 .drop-header {
     padding: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.drop-header:hover {
+    background-color: #11698e;
 }
 
 .drop-body {
@@ -85,19 +112,86 @@ section {
     padding: 20px;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
-    background-color: #eae3c8;
+}
+
+.drop-body:hover {
+    background-color: #19456b;
+}
+
+.field-desc {
+    margin-left: 15px;
+}
+
+.hashtag {
+    font-weight: bold;
+    color: #f5f4f4;
+    background-color: #111d5e;
+    border-radius: 6px;
+    display: inline;
+    padding:  2px 4px;
+    margin: 2px;
+}
+
+.hashtag-container {
+    margin-top: 15px;
 }
 
 .display-none {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+.content {
+    width: 80%;
+    float: left;
+}
+
+.featured-image {
+   max-width: 240px;
+   display: block;
+}
+
+.squared-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.image-border {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+aside {
+    position: relative;
+    border-radius: 14px;
+    top: 20px;
+    width: 20%;
+    padding: 20px;
+    float: right;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+}
+
+@media screen and (max-width :990px) {
     .jumbotron {
         padding: 20px;
     }
 
     nav {
         padding: 5px;
+    }
+
+    .content,aside {
+        width: 100%;
+    }
+
+    .squared-image {
+        width: 90px;
+        height: 90px;
+        border-radius: 45px;
     }
 }

@@ -1,0 +1,21 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+}
+
+.animate {
+    animation-name: colorChange;
+    animation-duration: 2s;
+}
+
+.no-height {
+    height: 0;
+}
+.height-200 {
+    height: 200px;
+}
+@keyframes colorChange {
+    from {height: 200px;}
+    to {height: 0;}
+}

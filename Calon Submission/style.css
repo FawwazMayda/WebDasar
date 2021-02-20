@@ -16,6 +16,10 @@ main {
     padding: 20px;
 }
 
+h2 {
+    margin-bottom: 40px;
+}
+
 .jumbotron {
     text-align: center;
     background-color: #f4f9f9;

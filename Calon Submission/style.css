@@ -3,6 +3,7 @@
 }
 
 body {
+    font-family: 'Raleway';
     margin: 0px;
     padding: 0px;
 }
@@ -44,7 +45,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #af0069;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -114,6 +115,7 @@ section {
 .drop-body {
     width: 100%;
     padding: 20px;
+    border-top: 2px solid black;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -136,6 +138,10 @@ section {
     margin: 2px;
 }
 
+.desc-container {
+    font-size: 12px;
+}
+
 .hashtag-container {
     margin-top: 15px;
 }
@@ -150,7 +156,7 @@ section {
 }
 
 .featured-image {
-   max-width: 240px;
+   max-width: 180px;
    display: block;
 }
 
